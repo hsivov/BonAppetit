@@ -5,7 +5,7 @@ spring:
   jpa:
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.MySQLDialect
+        dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: 'TRUE'
     hibernate:
       ddl-auto: update
@@ -15,10 +15,10 @@ spring:
       filter:
         enabled: 'true'
   datasource:
-    driverClassName: com.mysql.cj.jdbc.Driver
-    username: root
-    password: 1aD3^4WZ5F
-    url: jdbc:mysql://localhost:3306/bon_appetit?allowPublicKeyRetrieval=true&useSSL=false&createDatabaseIfNotExist=true&serverTimezone=UTC
+    driverClassName: org.postgresql.Driver
+    username: hristo
+    password: BCNTntqY6@ja
+    url: jdbc:postgresql://flexpostgres.postgres.database.azure.com:5432/bon_appetit
 
 logging:
   level:
